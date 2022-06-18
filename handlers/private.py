@@ -14,20 +14,20 @@ async def start(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🎉 𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖤𝗄𝗅𝖾 🎉", url=f"https://t.me/StarMuzikBot?startgroup=true"
+                        "🎉 Məni Qrupa Əlavə Et 🎉", url=f"https://t.me/StarMuzikBot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📚 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋" , callback_data= "herkes"
+                        "💡 Əmirlər" , callback_data= "herkes"
                     ),
                     InlineKeyboardButton(
-                        "🇹🇷 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url="https://t.me/StarBotKanal"
+                        "🇦🇿 Vendetta 🐊", url="https://t.me/VendettaChatAz"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🧑🏻‍💻 ɢɪᴛʜᴜʙ ᴋᴀʏɴᴀᴋ ᴋᴏᴅᴜ 🧑🏻‍💻", url="https://github.com/MehmetAtes21/music"
+                        "⚡ Kanal", url="https://t.me/cguesmasterresmi"
                     )
                 ]
                 
@@ -39,20 +39,20 @@ async def start(_, message: Message):
 
 @Client.on_callback_query(filters.regex("herkes"))
 async def herkes(_, query: CallbackQuery):
-    await query.edit_message_text(f"""<b>🇹🇷 Tüm Komutlar : \n\n» /vbul => ᴠɪᴅᴇᴏ ɪɴᴅɪʀ . \n» /bul => ᴍᴜᴢɪᴋ ɪɴᴅɪʀ . \n» /oynat => ᴍᴜᴢɪᴋ ᴏʏɴᴀᴛ . \n» /durdur => ᴍᴜᴢɪɢɪ ᴅᴜʀᴅᴜʀ . \n» /devam => ᴍᴜᴢɪɢɪ sᴜʀᴅᴜʀ . \n» /atla =>  ᴍᴜᴢɪɢɪ ᴀᴛʟᴀ . \n» /son => ᴍᴜᴢɪɢɪ sᴏɴʟᴀɴᴅɪʀ . \n» /katil => ᴀsɪsᴛᴀɴɪ ɢʀᴜʙᴀ ᴅᴀᴠᴇᴛ ᴇᴅᴇʀ . \n» /reload => ᴀᴅᴍɪɴ ʟɪsᴛᴇsɪɴɪ ɢᴜɴᴄᴇʟʟᴇʀ . \n\n» /auth => ᴋᴜʟʟᴀɴɪᴄɪɴɪɴ ʏᴏɴᴇᴛɪᴄɪ ᴏʟᴍᴀᴅɪɢɪ ʜᴀʟᴅᴇ ᴋᴏᴍᴜᴛʟᴀʀɪ ᴋᴜʟʟᴀɴᴍᴀsɪɴᴀ ɪᴢɪɴ ᴠᴇʀɪʀ .  \n\n» /unauth => ᴋᴜʟʟᴀɴɪᴄɪɴɪɴ ʏᴏɴᴇᴛɪᴄɪ ᴏʟᴍᴀᴅɪɢɪ ʜᴀʟᴅᴇ ᴋᴏᴍᴜᴛʟᴀʀɪ ᴋᴜʟʟᴀɴᴍᴀsɪɴɪ ᴇɴɢᴇʟʟᴇʀ . </b>""",
-    reply_markup=InlineKeyboardMarkup(
+    await query.edit_message_text(f"""<b>💡 Bütün Əmirlər : \n\n» /vbul => video yüklə . \n» /bul => mahnı yüklə . \n» /oynat => mahnı adı . \n» /durdur => mahnını diyandır  . \n» /devam => mahnıya dəvam et . \n» /atla =>  növbəti mahnı & Videoya keç . \n» /son => Mahnı & Videonu Diyandır . \n» /katil => assistant qrupa çağır . \n» /reload => admin siyahısı yeniləndi . \n\n» /auth => Userin Yetkisi Olmadığı Halda Əmirləri İşləməyə İcazə Verər  .  \n\n» /unauth =>  Userin Yetkisi Olmadığı Halda Əmirləri İşlədməsinə icazə verməni alar. </b>""",
+    reply_markup=InlineKeyboardButton(
              [
                  [
                      InlineKeyboardButton(
-                         "🇹🇷 𝖠𝗌𝗂𝗌𝗍𝖺𝗇", url="https://t.me/StarMuzikAsistan"
+                         "🇦🇿 Assistant", url="https://t.me/GroupMusicAzAssistant"
                      ),
                      InlineKeyboardButton(
-                         "🧑🏻‍💻 𝖮𝗐𝗇𝖾𝗋", url="https://t.me/Hayiboo"
+                         "🧑🏻‍💻 Qurucu & Sahib", url="https://t.me/vusaliw"
                      )
                  ],
                  [
                      InlineKeyboardButton(
-                         "⬅️ 𝖦𝖾𝗋𝗂 ⬅️", callback_data="cbstart")
+                         "⬅️ Geri ⬅️", callback_data="cbstart")
                  ] 
              ]
          )
@@ -62,25 +62,25 @@ async def herkes(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
-    await query.edit_message_text(f"""● **𝖬𝖾𝗋𝗁𝖺𝖻𝖺** {query.from_user.mention} \n\n● **𝖡𝖾𝗇** {bot} !\n\n● **𝖲𝖾𝗌𝗅𝗂 𝖲𝗈𝗁𝖻𝖾𝗍𝗅𝖾𝗋𝖽𝖾 müzik 𝖢𝖺𝗅𝖺𝖻𝗂𝗅𝖾𝗇 𝖡𝗈𝗍𝗎𝗆 . . !** \n\n● **𝖡𝖺𝗇 𝖸𝖾𝗍𝗄𝗂𝗌𝗂𝗓, 𝖲𝖾𝗌 𝖸𝗈𝗇𝖾𝗍𝗂𝗆 𝖸𝖾𝗍𝗄𝗂𝗌𝗂 𝗏𝖾𝗋𝗂𝗉 𝖠𝗌𝗂𝗌𝗍𝖺𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖤𝗄𝗅𝖾𝗒𝗂𝗇 . . !**""",
+    await query.edit_message_text(f"""● **Salam** {query.from_user.mention} \n\n● **Mən** {bot} !\n\n● **Group Az Music 🇦🇿 səsli söhbətdə mahnı dinləməyinizə kömək olan botam . . !** \n\n● **Ban Yetkisiz Səs Yetkisi Verib /reload edib /play yazın assistant özü qrupa daxil olacaq  . . !**""",
          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🎉 𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖤𝗄𝗅𝖾 🎉", url=f"https://t.me/StarMuzikBot?startgroup=true"
+                        "🎉 Məni Qrupa Əlavə Et 🎉", url=f"https://t.me/StarMuzikBot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📚 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋" , callback_data= "herkes"
+                        "💡 Əmirlər" , callback_data= "herkes"
                     ),
                     InlineKeyboardButton(
-                        "🇹🇷 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url=f"https://t.me/StarBotKanal"
+                        "⚡ Kanal", url=f"https://t.me/cguesmasterresmi"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🧑🏻‍💻 ɢɪᴛʜᴜʙ ᴋᴀʏɴᴀᴋ ᴋᴏᴅᴜ 🧑🏻‍💻", url="https://github.com/MehmetAtes21/music"
+                        "🧑🏻‍💻 Qurucu & Sahib", url="https://t.me/vusaliw"
                     )
                 ]
                 
